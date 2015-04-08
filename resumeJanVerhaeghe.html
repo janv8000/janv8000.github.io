@@ -1,514 +1,649 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 
 <head>
-<meta charset="utf-8">
-<title>resumeJanVerhaeghe</title>
-<style type="text/css">
-body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding: 30px; }
-
-body > *:first-child {
-  margin-top: 0 !important; }
-body > *:last-child {
-  margin-bottom: 0 !important; }
-
-a {
-  color: #4183C4; }
-a.absent {
-  color: #cc0000; }
-a.anchor {
-  display: block;
-  padding-left: 30px;
-  margin-left: -30px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  cursor: text;
-  position: relative; }
-
-h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
-  text-decoration: none; }
-
-h1 tt, h1 code {
-  font-size: inherit; }
-
-h2 tt, h2 code {
-  font-size: inherit; }
-
-h3 tt, h3 code {
-  font-size: inherit; }
-
-h4 tt, h4 code {
-  font-size: inherit; }
-
-h5 tt, h5 code {
-  font-size: inherit; }
-
-h6 tt, h6 code {
-  font-size: inherit; }
-
-h1 {
-  font-size: 28px;
-  color: black; }
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #cccccc;
-  color: black; }
-
-h3 {
-  font-size: 18px; }
-
-h4 {
-  font-size: 16px; }
-
-h5 {
-  font-size: 14px; }
-
-h6 {
-  color: #777777;
-  font-size: 14px; }
-
-p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
-
-hr {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
-  border: 0 none;
-  color: #cccccc;
-  height: 4px;
-  padding: 0;
-}
-
-body > h2:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-body > h1:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-  body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0; }
-
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
-  margin-top: 0; }
-
-li p.first {
-  display: inline-block; }
-li {
-  margin: 0; }
-ul, ol {
-  padding-left: 30px; }
-
-ul :first-child, ol :first-child {
-  margin-top: 0; }
-
-dl {
-  padding: 0; }
-  dl dt {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    margin: 15px 0 5px; }
-    dl dt:first-child {
-      padding: 0; }
-    dl dt > :first-child {
-      margin-top: 0; }
-    dl dt > :last-child {
-      margin-bottom: 0; }
-  dl dd {
-    margin: 0 0 15px;
-    padding: 0 15px; }
-    dl dd > :first-child {
-      margin-top: 0; }
-    dl dd > :last-child {
-      margin-bottom: 0; }
-
-blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-table {
-  padding: 0;border-collapse: collapse; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
-
-img {
-  max-width: 100%; }
-
-span.frame {
-  display: block;
-  overflow: hidden; }
-  span.frame > span {
-    border: 1px solid #dddddd;
-    display: block;
-    float: left;
-    overflow: hidden;
-    margin: 13px 0 0;
-    padding: 7px;
-    width: auto; }
-  span.frame span img {
-    display: block;
-    float: left; }
-  span.frame span span {
-    clear: both;
-    color: #333333;
-    display: block;
-    padding: 5px 0 0; }
-span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center; }
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center; }
-span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right; }
-  span.align-right span img {
-    margin: 0;
-    text-align: right; }
-span.float-left {
-  display: block;
-  margin-right: 13px;
-  overflow: hidden;
-  float: left; }
-  span.float-left span {
-    margin: 13px 0 0; }
-span.float-right {
-  display: block;
-  margin-left: 13px;
-  overflow: hidden;
-  float: right; }
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right; }
-
-code, tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px; }
-
-pre code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent; }
-
-.highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-  pre code, pre tt {
-    background-color: transparent;
-    border: none; }
-
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:0 auto;
-    }
-}
-@media print {
-	table, pre {
-		page-break-inside: avoid;
-	}
-	pre {
-		word-wrap: break-word;
-	}
-}
-</style>
+    <meta charset="utf-8">
+    <title>resumeJanVerhaeghe</title>
+    <style type="text/css">
+        body {
+            font-family: Helvetica, arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: white;
+            padding: 30px;
+        }
+        
+        body > *:first-child {
+            margin-top: 0 !important;
+        }
+        
+        body > *:last-child {
+            margin-bottom: 0 !important;
+        }
+        
+        a {
+            color: #4183C4;
+        }
+        
+        a.absent {
+            color: #cc0000;
+        }
+        
+        a.anchor {
+            display: block;
+            padding-left: 30px;
+            margin-left: -30px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 20px 0 10px;
+            padding: 0;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            cursor: text;
+            position: relative;
+        }
+        
+        h1:hover a.anchor,
+        h2:hover a.anchor,
+        h3:hover a.anchor,
+        h4:hover a.anchor,
+        h5:hover a.anchor,
+        h6:hover a.anchor {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+            text-decoration: none;
+        }
+        
+        h1 tt,
+        h1 code {
+            font-size: inherit;
+        }
+        
+        h2 tt,
+        h2 code {
+            font-size: inherit;
+        }
+        
+        h3 tt,
+        h3 code {
+            font-size: inherit;
+        }
+        
+        h4 tt,
+        h4 code {
+            font-size: inherit;
+        }
+        
+        h5 tt,
+        h5 code {
+            font-size: inherit;
+        }
+        
+        h6 tt,
+        h6 code {
+            font-size: inherit;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: black;
+        }
+        
+        h2 {
+            font-size: 24px;
+            border-bottom: 1px solid #cccccc;
+            color: black;
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+        
+        h4 {
+            font-size: 16px;
+        }
+        
+        h5 {
+            font-size: 14px;
+        }
+        
+        h6 {
+            color: #777777;
+            font-size: 14px;
+        }
+        
+        p,
+        blockquote,
+        ul,
+        ol,
+        dl,
+        li,
+        table,
+        pre {
+            margin: 15px 0;
+        }
+        
+        hr {
+            background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+            border: 0 none;
+            color: #cccccc;
+            height: 4px;
+            padding: 0;
+        }
+        
+        body > h2:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        body > h1:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        body > h1:first-child + h2 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        body > h3:first-child,
+        body > h4:first-child,
+        body > h5:first-child,
+        body > h6:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        a:first-child h1,
+        a:first-child h2,
+        a:first-child h3,
+        a:first-child h4,
+        a:first-child h5,
+        a:first-child h6 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        h1 p,
+        h2 p,
+        h3 p,
+        h4 p,
+        h5 p,
+        h6 p {
+            margin-top: 0;
+        }
+        
+        li p.first {
+            display: inline-block;
+        }
+        
+        li {
+            margin: 0;
+        }
+        
+        ul,
+        ol {
+            padding-left: 30px;
+        }
+        
+        ul:first-child,
+        ol:first-child {
+            margin-top: 0;
+        }
+        
+        dl {
+            padding: 0;
+        }
+        
+        dl dt {
+            font-size: 14px;
+            font-weight: bold;
+            font-style: italic;
+            padding: 0;
+            margin: 15px 0 5px;
+        }
+        
+        dl dt:first-child {
+            padding: 0;
+        }
+        
+        dl dt >:first-child {
+            margin-top: 0;
+        }
+        
+        dl dt >:last-child {
+            margin-bottom: 0;
+        }
+        
+        dl dd {
+            margin: 0 0 15px;
+            padding: 0 15px;
+        }
+        
+        dl dd >:first-child {
+            margin-top: 0;
+        }
+        
+        dl dd >:last-child {
+            margin-bottom: 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #dddddd;
+            padding: 0 15px;
+            color: #777777;
+        }
+        
+        blockquote >:first-child {
+            margin-top: 0;
+        }
+        
+        blockquote >:last-child {
+            margin-bottom: 0;
+        }
+        
+        table {
+            padding: 0;
+            border-collapse: collapse;
+        }
+        
+        table tr {
+            border-top: 1px solid #cccccc;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        table tr:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+        
+        table tr th {
+            font-weight: bold;
+            border: 1px solid #cccccc;
+            margin: 0;
+            padding: 6px 13px;
+        }
+        
+        table tr td {
+            border: 1px solid #cccccc;
+            margin: 0;
+            padding: 6px 13px;
+        }
+        
+        table tr th:first-child,
+        table tr td:first-child {
+            margin-top: 0;
+        }
+        
+        table tr th:last-child,
+        table tr td:last-child {
+            margin-bottom: 0;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        span.frame {
+            display: block;
+            overflow: hidden;
+        }
+        
+        span.frame > span {
+            border: 1px solid #dddddd;
+            display: block;
+            float: left;
+            overflow: hidden;
+            margin: 13px 0 0;
+            padding: 7px;
+            width: auto;
+        }
+        
+        span.frame span img {
+            display: block;
+            float: left;
+        }
+        
+        span.frame span span {
+            clear: both;
+            color: #333333;
+            display: block;
+            padding: 5px 0 0;
+        }
+        
+        span.align-center {
+            display: block;
+            overflow: hidden;
+            clear: both;
+        }
+        
+        span.align-center > span {
+            display: block;
+            overflow: hidden;
+            margin: 13px auto 0;
+            text-align: center;
+        }
+        
+        span.align-center span img {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        span.align-right {
+            display: block;
+            overflow: hidden;
+            clear: both;
+        }
+        
+        span.align-right > span {
+            display: block;
+            overflow: hidden;
+            margin: 13px 0 0;
+            text-align: right;
+        }
+        
+        span.align-right span img {
+            margin: 0;
+            text-align: right;
+        }
+        
+        span.float-left {
+            display: block;
+            margin-right: 13px;
+            overflow: hidden;
+            float: left;
+        }
+        
+        span.float-left span {
+            margin: 13px 0 0;
+        }
+        
+        span.float-right {
+            display: block;
+            margin-left: 13px;
+            overflow: hidden;
+            float: right;
+        }
+        
+        span.float-right > span {
+            display: block;
+            overflow: hidden;
+            margin: 13px auto 0;
+            text-align: right;
+        }
+        
+        code,
+        tt {
+            margin: 0 2px;
+            padding: 0 5px;
+            white-space: nowrap;
+            border: 1px solid #eaeaea;
+            background-color: #f8f8f8;
+            border-radius: 3px;
+        }
+        
+        pre code {
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            border: none;
+            background: transparent;
+        }
+        
+        .highlight pre {
+            background-color: #f8f8f8;
+            border: 1px solid #cccccc;
+            font-size: 13px;
+            line-height: 19px;
+            overflow: auto;
+            padding: 6px 10px;
+            border-radius: 3px;
+        }
+        
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #cccccc;
+            font-size: 13px;
+            line-height: 19px;
+            overflow: auto;
+            padding: 6px 10px;
+            border-radius: 3px;
+        }
+        
+        pre code,
+        pre tt {
+            background-color: transparent;
+            border: none;
+        }
+        
+        sup {
+            font-size: 0.83em;
+            vertical-align: super;
+            line-height: 0;
+        }
+        
+        * {
+            -webkit-print-color-adjust: exact;
+        }
+        
+        @media screen and (min-width: 914px) {
+            body {
+                width: 854px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media print {
+            table,
+            pre {
+                page-break-inside: avoid;
+            }
+            pre {
+                word-wrap: break-word;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<h1 id="toc_0">Jan Verhaeghe</h1>
+    <h1 id="toc_0">Jan Verhaeghe</h1>
 
-<h2 id="toc_1">Software developer, .Net &amp; Web</h2>
+    <h2 id="toc_1">Software developer, .Net &amp; Web</h2>
 
-<blockquote>
-<p><a href="jan@hwfaq.be">jan@hwfaq.be</a></p>
-</blockquote>
+    <blockquote>
+        <p><a href="jan@hwfaq.be">jan@hwfaq.be</a>
+        </p>
+    </blockquote>
 
-<hr>
+    <hr>
 
-<h3 id="toc_2">Profile</h3>
+    <h3 id="toc_2">Profile</h3>
 
-<p>Creative problem-solver.</p>
+    <p>Creative problem-solver.</p>
 
-<hr>
+    <hr>
 
-<h3 id="toc_3">Employment</h3>
+    <h3 id="toc_3">Employment</h3>
 
-<p><a href="http://www.qld.be">Quantum Leap Development</a> (Brussels)
-: <em>Senior Software developer</em>
-  <strong>2009-…</strong></p>
+    <p><a href="http://www.qld.be">Quantum Leap Development</a> (Brussels) : <em>Senior Software developer</em>
+        <strong>2009-…</strong>
+    </p>
 
-<p><a href="http://www.axxes-it.com/">Axxes</a> (Antwerp)
-: <em>Software developer</em>
-  <strong>2008-2009</strong></p>
+    <p><a href="http://www.axxes-it.com/">Axxes</a> (Antwerp) : <em>Software developer</em>
+        <strong>2008-2009</strong>
+    </p>
 
-<p><a href="http://web.archive.org/web/20080224234102/http://www.ihc.be/pages/nl/index.html">IHC group</a> (Oostkamp)
-: <em>Software developer</em>
-  <strong>2004-2008</strong></p>
+    <p><a href="http://web.archive.org/web/20080224234102/http://www.ihc.be/pages/nl/index.html">IHC group</a> (Oostkamp) : <em>Software developer</em>
+        <strong>2004-2008</strong>
+    </p>
 
-<hr>
+    <hr>
 
-<h3 id="toc_4">Projects</h3>
+    <h3 id="toc_4">Projects</h3>
 
-<h4 id="toc_5">Recall</h4>
+    <h4 id="toc_5">Recall</h4>
 
-<p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a>
-: <em>Analysis and development</em>
-  <strong>march 2014 - …</strong>
-  One of the services the APB provides to its members is handling the logistic and financial aspects of large-scale product recalls, both for medicines and other health products.</p>
+    <p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a> : <em>Analysis and development</em>
+        <strong>march 2014 - …</strong> One of the services the APB provides to its members is handling the logistic and financial aspects of large-scale product recalls, both for medicines and other health products.</p>
 
-<p>The newly developed &#39;Recall&#39; application streamlined this entire process.  Error-prone paper forms were replaced by an electronic registration application and each shipment was accompanied by a barcode, giving an end-to-end visibility into the status and whereabouts of a shipment.  The APB receiving department was equipped with touch-enabled screens and an intuitive tool to verify package contents.</p>
+    <p>The newly developed &#39;Recall&#39; application streamlined this entire process. Error-prone paper forms were replaced by an electronic registration application and each shipment was accompanied by a barcode, giving an end-to-end visibility into the status and whereabouts of a shipment. The APB receiving department was equipped with touch-enabled screens and an intuitive tool to verify package contents.</p>
 
-<p>Release of this application is planned Q1 2015.</p>
+    <p>Release of this application is planned Q1 2015.</p>
 
-<h4 id="toc_6">E-Reporting</h4>
+    <h4 id="toc_6">E-Reporting</h4>
 
-<p>Client: <a href="http://www.adecco.be">Adecco Belgium</a>
-: <em>Analysis and development</em>
-  <strong>sept 2013 - march 2014</strong>
-  E-Reporting allows customers to generate reports containing financial and administrative data.  The system also allows defining certain triggers to automatically send reports containing the latest data. </p>
+    <p>Client: <a href="http://www.adecco.be">Adecco Belgium</a> : <em>Analysis and development</em>
+        <strong>sept 2013 - march 2014</strong> E-Reporting allows customers to generate reports containing financial and administrative data. The system also allows defining certain triggers to automatically send reports containing the latest data. </p>
 
-<h4 id="toc_7">BNM</h4>
+    <h4 id="toc_7">BNM</h4>
 
-<p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a>
-: <em>Analysis and development</em>
-  <strong>may 2013 - sept 2013</strong>
-  Development of BNM/ENM, a web tool to assist the community pharmacist in advanced pharmaceutical care tasks (<em>Begeleidingsgesprek bij het opstarten van Nieuwe Medicatie</em>)
-  This tool will be touch enabled and will have responsive design for tablet.</p>
+    <p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a> : <em>Analysis and development</em>
+        <strong>may 2013 - sept 2013</strong> Development of BNM/ENM, a web tool to assist the community pharmacist in advanced pharmaceutical care tasks (<em>Begeleidingsgesprek bij het opstarten van Nieuwe Medicatie</em>) This tool will be touch enabled and will have responsive design for tablet.</p>
 
-<h4 id="toc_8">CRM Online - SSO - Web tools suite</h4>
+    <h4 id="toc_8">CRM Online - SSO - Web tools suite</h4>
 
-<p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a>
-: <em>Analysis and development</em>
-  <strong>2012 - 2013</strong>
-  Member pharmacists can manage their own profiles through a web interface. This system integrates with the organization’s backend CRM system.
-  Realisation of a Single Sign On system and integration of all web tools in one integrated suite using this SSO system.</p>
+    <p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a> : <em>Analysis and development</em>
+        <strong>2012 - 2013</strong> Member pharmacists can manage their own profiles through a web interface. This system integrates with the organization’s backend CRM system. Realisation of a Single Sign On system and integration of all web tools in one integrated suite using this SSO system.</p>
 
-<h4 id="toc_9">MyQualityAssistant</h4>
+    <h4 id="toc_9">MyQualityAssistant</h4>
 
-<p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a>
-: <em>Analysis and development</em>
-  <strong>2012 - 2013</strong>
-  MyQualityAssistant is the practical translation of the Guide to Good Pharmaceutical Practices. MyQualityAssistant is a &quot;generic&quot; model for each pharmacy to be filled to the specific situation. The website <a href="http://myqualityassistant.apb.be">myqualityassistant.apb.be</a> is accessible to more than 4.000 pharmacists.</p>
+    <p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a> : <em>Analysis and development</em>
+        <strong>2012 - 2013</strong> MyQualityAssistant is the practical translation of the Guide to Good Pharmaceutical Practices. MyQualityAssistant is a &quot;generic&quot; model for each pharmacy to be filled to the specific situation. The website <a href="http://myqualityassistant.apb.be">myqualityassistant.apb.be</a> is accessible to more than 4.000 pharmacists.</p>
 
-<h4 id="toc_10">DelphiCare</h4>
+    <h4 id="toc_10">DelphiCare</h4>
 
-<p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a>
-: <em>Analysis and development</em>
-  <strong>2012 - 2013</strong>
- Delphi Care is a scientific database with information on Belgian and foreign medicines. Its <a href="http://delphicare.apb.be">website</a> is accessible by over 4.000 pharmacists.</p>
+    <p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a> : <em>Analysis and development</em>
+        <strong>2012 - 2013</strong> Delphi Care is a scientific database with information on Belgian and foreign medicines. Its <a href="http://delphicare.apb.be">website</a> is accessible by over 4.000 pharmacists.</p>
 
-<h4 id="toc_11">Tarief voor Ziekenhuizen</h4>
+    <h4 id="toc_11">Tarief voor Ziekenhuizen</h4>
 
-<p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a>
-: <em>Analysis and development</em>
-  <strong>2009-2012</strong>
- <em>Tarief voor Ziekenhuizen</em> is a WinForms based application for managing all data concerning charging and billing of ambulatory and hospitalized patients</p>
+    <p>Client: <a href="http://www.apb.be">APB – Association Pharmaceutique Belgique – Algemene Pharmaceutische Bond</a> : <em>Analysis and development</em>
+        <strong>2009-2012</strong>
+        <em>Tarief voor Ziekenhuizen</em> is a WinForms based application for managing all data concerning charging and billing of ambulatory and hospitalized patients</p>
 
-<h4 id="toc_12">Service delivery Trading and Portfolio Management</h4>
+    <h4 id="toc_12">Service delivery Trading and Portfolio Management</h4>
 
-<p>Client: <a href="http://www.electrabel.be">Electrabel</a>
-: <em>Server and application administration</em>
-  <strong>2008-2009</strong>
-  EFETNet messaging service maintenance</p>
+    <p>Client: <a href="http://www.electrabel.be">Electrabel</a> : <em>Server and application administration</em>
+        <strong>2008-2009</strong> EFETNet messaging service maintenance</p>
 
-<h4 id="toc_13">NPADM</h4>
+    <h4 id="toc_13">NPADM</h4>
 
-<p>Client: IHC group
-: <em>Developer</em>
-  <strong>2005-2008</strong>
-The NPADM application (ZIS) supports the following processes around care in the hospital:</p>
+    <p>Client: IHC group : <em>Developer</em>
+        <strong>2005-2008</strong> The NPADM application (ZIS) supports the following processes around care in the hospital:</p>
 
-<ul>
-<li>The administrative process by the management of patient, contacts and other data (third payer data, supports legislation, ...)</li>
-<li>The logistical part of the care process by registering and recording consultation data</li>
-<li>The billing process by integrating an automatic Carenet and registering benefits, overheads and transport both online and through import</li>
-</ul>
+    <ul>
+        <li>The administrative process by the management of patient, contacts and other data (third payer data, supports legislation, ...)</li>
+        <li>The logistical part of the care process by registering and recording consultation data</li>
+        <li>The billing process by integrating an automatic Carenet and registering benefits, overheads and transport both online and through import</li>
+    </ul>
 
-<h4 id="toc_14">NMKG</h4>
+    <h4 id="toc_14">NMKG</h4>
 
-<p>Client: IHC group
-: <em>Development</em>
-  <strong>2004-2005</strong>
-The MKG project provided an application to enter government required data (diagnosis and performed procedures) regarding hospital stays. Afterwards it allowed optimisation of said data to maximize benchmark scores used for hospital financing calculations
-The application integrated with the 3M Coding and Reimbursement System</p>
+    <p>Client: IHC group : <em>Development</em>
+        <strong>2004-2005</strong> The MKG project provided an application to enter government required data (diagnosis and performed procedures) regarding hospital stays. Afterwards it allowed optimisation of said data to maximize benchmark scores used for hospital financing calculations The application integrated with the 3M Coding and Reimbursement System</p>
 
-<hr>
+    <hr>
 
-<h3 id="toc_15">Skills</h3>
+    <h3 id="toc_15">Skills</h3>
 
-<h4 id="toc_16">Methodology</h4>
+    <h4 id="toc_16">Methodology</h4>
 
-<ul>
-<li>Agile Software Development</li>
-<li>Test Driven Development</li>
-<li>Object orientation – Refactoring - Design patterns</li>
-</ul>
+    <ul>
+        <li>Agile Software Development</li>
+        <li>Test Driven Development</li>
+        <li>Object orientation – Refactoring - Design patterns</li>
+    </ul>
 
-<h4 id="toc_17">Operating systems</h4>
+    <h4 id="toc_17">Operating systems</h4>
 
-<ul>
-<li>Mac OS X</li>
-<li>Windows (7 - XP - 2000 - …)</li>
-</ul>
+    <ul>
+        <li>Mac OS X</li>
+        <li>Windows (7 - XP - 2000 - …)</li>
+    </ul>
 
-<h4 id="toc_18">Programming languages</h4>
+    <h4 id="toc_18">Programming languages</h4>
 
-<ul>
-<li>C#</li>
-<li>Javascript</li>
-<li>Razor</li>
-<li>T-SQL / ANSI SQL</li>
-<li>LINQ</li>
-<li>Windows batch scripting</li>
-<li>NAnt</li>
-</ul>
+    <ul>
+        <li>C#</li>
+        <li>Javascript</li>
+        <li>Razor</li>
+        <li>T-SQL / ANSI SQL</li>
+        <li>LINQ</li>
+        <li>Windows batch scripting</li>
+        <li>NAnt</li>
+    </ul>
 
-<h4 id="toc_19">Frameworks, technologies, API&#39;s, applications</h4>
+    <h4 id="toc_19">Frameworks, technologies, API&#39;s, applications</h4>
 
-<ul>
-<li>.NET</li>
-<li>ASP.NET MVC</li>
-<li>jQuery</li>
-<li>HTML5</li>
-<li>KnockoutJS</li>
-<li>Javascript</li>
-<li>Bootstrap</li>
-<li>CSS</li>
-<li>ADO.NET</li>
-<li>NHibernate / Entity Framework</li>
-<li>Castle Windsor / Autofac</li>
-<li>Git / Github</li>
-<li>Subversion, Tortoise</li>
-<li>jQuery Mobile</li>
-<li>jQuery UI</li>
-<li>Winforms</li>
-<li>Resharper</li>
-<li>CruiseControl.Net</li>
-<li>Teamcity</li>
-<li>Fitnesse</li>
-<li>Visual Studio 2005, 2008, 2010, 2012, 2013</li>
-</ul>
+    <ul>
+        <li>.NET</li>
+        <li>ASP.NET MVC</li>
+        <li>jQuery</li>
+        <li>HTML5</li>
+        <li>KnockoutJS</li>
+        <li>Javascript</li>
+        <li>Bootstrap</li>
+        <li>CSS</li>
+        <li>ADO.NET</li>
+        <li>NHibernate / Entity Framework</li>
+        <li>Castle Windsor / Autofac</li>
+        <li>Git / Github</li>
+        <li>Subversion, Tortoise</li>
+        <li>jQuery Mobile</li>
+        <li>jQuery UI</li>
+        <li>Winforms</li>
+        <li>Resharper</li>
+        <li>CruiseControl.Net</li>
+        <li>Teamcity</li>
+        <li>Fitnesse</li>
+        <li>Visual Studio 2005, 2008, 2010, 2012, 2013</li>
+    </ul>
 
-<h4 id="toc_20">Databases</h4>
+    <h4 id="toc_20">Databases</h4>
 
-<ul>
-<li>MS SQL Server 2000, 2005, 2008R2</li>
-<li>RavenDB</li>
-<li>RavenHQ</li>
-</ul>
+    <ul>
+        <li>MS SQL Server 2000, 2005, 2008R2</li>
+        <li>RavenDB</li>
+        <li>RavenHQ</li>
+    </ul>
 
-<h4 id="toc_21">Special interests</h4>
+    <h4 id="toc_21">Special interests</h4>
 
-<ul>
-<li>Cloud computing</li>
-<li>Continuous Delivery - Devops</li>
-<li>Social coding</li>
-</ul>
+    <ul>
+        <li>Cloud computing</li>
+        <li>Continuous Delivery - Devops</li>
+        <li>Social coding</li>
+    </ul>
 
-<h4 id="toc_22">Dislikes</h4>
+    <h4 id="toc_22">Dislikes</h4>
 
-<ul>
-<li>Visual SourceSafe</li>
-<li>IBM ClearCase</li>
-<li>VB.Net</li>
-</ul>
+    <ul>
+        <li>Visual SourceSafe</li>
+        <li>IBM ClearCase</li>
+        <li>VB.Net</li>
+    </ul>
 
-<hr>
+    <hr>
 
-<h3 id="toc_23">Footer</h3>
+    <h3 id="toc_23">Footer</h3>
 
-<p>Jan Verhaeghe -- <a href="jan@hwfaq.be">jan@hwfaq.be</a></p>
+    <p>Jan Verhaeghe -- <a href="jan@hwfaq.be">jan@hwfaq.be</a>
+    </p>
 
-<hr>
+    <hr>
 
 
 </body>
